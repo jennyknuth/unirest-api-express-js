@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<h1>NYT Bestsellers</h1>
+
+{{#each books}}
+  <article>
+      <h2>{{title}}</h2>
+      by <strong>{{author}}</strong>
+      <img src="{{book_image}}" alt="cover of {{title}}">
+  </article>
+{{/each}}
